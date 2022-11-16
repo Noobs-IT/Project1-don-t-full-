@@ -1,0 +1,69 @@
+.volume{
+    .swiper{
+        width: 560px;
+    }
+
+    background: #2D3238;
+
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 34px;
+        &__h2{
+            font-family: $russo;
+            font-weight: 400;
+            font-size: 36px;
+            color: $blue;
+        }
+    }
+    &__ctrl{
+        display: flex;
+        gap: 24px;
+        margin-top: 35px;
+        &__btn{
+            @include btn(18px, 20px, 10px, 35px, 0);
+            border: none;
+            background: rgba(241, 241, 241, 0.2);
+            width: 164px;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            &:focus{
+                background: $blue;
+            }
+
+        }
+    }
+    &__btm{
+        display: flex;
+        justify-content: center;
+        &__btn{            
+            position: absolute;
+            top: -70px;
+            width: 281px;
+            background: $blue;
+            @include btn(24px, 11px, 30px, 60px, 0);
+           &:before{
+            @include btn-bf(43px, 130px)
+           };
+           &:hover:before{
+            transform: scale(25);
+           };
+           &:hover{
+            color: $blue;
+           };
+
+    
+        }
+    }
+
+
+
+
+
+}

@@ -1,0 +1,122 @@
+.adventage{
+    background: $black;
+    .container{
+      h2{
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: $white;
+        padding-top: 57px;
+        margin-bottom: 25px;
+      }
+      .adventage__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 58px;
+        row-gap: 30px;
+        padding-bottom: 40px;
+        .adventage__box{
+          text-align: center;
+          h3{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $blue;
+            margin-top: 8px;
+            margin-bottom: 14px;
+          }
+          p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: $grey;
+          }
+        }
+        .adventage__box:nth-child(2){
+          margin-top: 30px;
+        }
+        .adventage__box:nth-child(5){
+          margin-top: 60px;
+        }
+      }
+      .adventage__content{
+        display: flex;
+        .content__text{
+          h2{
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 42px;
+            color: $white;
+            text-align: left;
+            span{
+              span{
+                color: $blue;
+              }
+            }
+          }
+        }
+        a{
+          width: 533px;
+          @include btn(14px, 2px, 7px, 12px, 0);
+          &:before{
+            @include btn-bf(10px, 250px)
+          };
+          &:hover:before{
+            @include btn-hv-bf;
+          };
+          &:hover{
+            color: $blue;
+          }
+
+        }
+      }
+    }
+  }
+  
+  @media (max-width:767px){
+    .adventage{
+      .container{
+        @include container2;
+        .adventage__wrapper{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          row-gap: 30px;
+          padding-bottom: 15px;
+  
+          .adventage__box:nth-child(2){
+            margin-top: 0px;
+          }
+          .adventage__box:nth-child(5){
+            margin-top: 0px;
+          }
+          .adventage__box:last-child{
+            display: none;
+          }
+        }
+        .adventage__content{
+          display: block ;
+          margin-top: 20px;
+          .content__img{
+            display: flex;
+            justify-content: center;
+          }
+          .content__text{
+            margin: auto !important;
+            h2{
+              text-align: center;
+              span{
+                span{
+                  color: $blue;
+                }
+              }
+            }
+          }
+          .contaent--btn{
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }

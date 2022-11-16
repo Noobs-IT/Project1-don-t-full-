@@ -1,0 +1,87 @@
+
+  @mixin navLink {
+    border: 1px solid #FFFFFF;
+    width: 33px;
+    transform: rotate(90deg);
+    margin: 15px 21px 0 15px;
+  }
+  @mixin btn($size, $brd-rad, $p-top, $p-btm, $bx) {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    background: #2194FF ;
+    box-shadow: $bx;
+    border-radius: $brd-rad;
+    border: none;
+    text-align: center;
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: $size;
+    line-height: 27px;
+    color: $white;
+    padding-top: $p-top;
+    padding-bottom: $p-top;
+    padding-right: $p-btm;
+    padding-left: $p-btm;
+    margin-bottom: 13px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+@mixin btn-bf($top, $right) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: $top;
+    right: $right;
+    background: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 0px;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-out;
+    
+    
+  }
+  @mixin btn-hv-bf {
+    transform: scale(25);
+  }
+  @mixin container2 {
+    min-width: 730px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+  }
+  @mixin container {
+    max-width: 1106px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  @mixin btn1 {
+    padding: 10px 35px;
+    color: $white;
+    background-color: $blue;
+    border-radius: 50px;
+  }
+  
+
+  
+  @mixin navLink {
+    border: 1px solid #FFFFFF;
+    width: 33px;
+    transform: rotate(90deg);
+    margin: 15px 21px 0 15px;
+  }
+  
+  @mixin navLink2 {
+    border: 1px solid #FFFFFF;
+    width: 33px;
+    transform: rotate(90deg);
+    margin: 15px 7px 0 7px;
+  }
+  
+
+//   inset 0px 4px 12px rgba(0, 0, 0, 0.45)
+  
