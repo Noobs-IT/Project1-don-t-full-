@@ -58,6 +58,12 @@
     width: 100%;
     margin: auto;
   }
+  @mixin container3 {
+    max-width: 300px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+  }
   
   @mixin btn1 {
     padding: 10px 35px;

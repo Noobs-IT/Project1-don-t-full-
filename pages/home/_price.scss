@@ -41,7 +41,7 @@
           color: $grey;
           margin-bottom: 28px;
         }
-        a{
+        button{
           @include btn(18px, 50px, 10px, 35px, 0);
           &:before{
             @include btn-bf(10px, 50px);
@@ -102,6 +102,7 @@
     background-color: $darkBlue ;
     padding-bottom: 44px;
     .container{
+      @include container2;
       .price__title{
         font-size: 36px;
         line-height: 43px;
@@ -110,13 +111,13 @@
         padding-top: 46px;
         margin-bottom: 49px;
       }
-      @include container2;
       .price__wrapper{
         display: flex;
+        justify-content: center;
         gap: 10px;
-        // .box:nth-child(2){
-        //   // display: none;
-        // }
+        .box:nth-child(2){
+          display: none;
+        }
         .box{
           margin-top: 15px;
           h2{
@@ -158,6 +159,9 @@
               font-size: 58px;
             }
           }
+        }
+        .price__wrapper__arrow{
+          display: none;
         }
       }
     }

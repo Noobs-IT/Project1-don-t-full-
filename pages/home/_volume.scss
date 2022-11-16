@@ -36,7 +36,11 @@
             &:focus{
                 background: $blue;
             }
-
+            &:hover{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+            transition: .5s;
         }
     }
     &__btm{
@@ -61,9 +65,4 @@
     
         }
     }
-
-
-
-
-
 }

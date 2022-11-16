@@ -21,7 +21,7 @@
             <li class="header__item"></li>
           </li>
           <li class="header__item">
-            <a href=""
+            <a class="header__link" href=""
             >Расправь плечи <span class="block">в теплом доме</span></a
             >
           </li>
@@ -63,10 +63,12 @@
           <h1 class="header__title">Доставим газ <span class="block">за 4 часа</span></h1>
           <p class="header__subTitle">в любую точку  Москвы <span class="block">и Московской области</span></p>
           <img class="header__img" src="/assets/images/arrowBottom.png" alt="">
-          <a class="header__link btn" href="">Заказать доставку газа <span class="block">в газгольдер</span></a>
+          <div class="link">
+          <a id="modal" class="header__link btn" href="">Заказать доставку газа <span class="block">в газгольдер</span></a>
+          </div>
           <h5>Доставка газа всегда по актуальным ценам</h5>
         </div>
-        <div class="header__img">
+        <div class="header__img img2">
           <img src="/assets/images/headerBg.png" alt="">
         </div>
       </div>
@@ -81,7 +83,7 @@
             <h2>Пропан</h2>
             <h3>от 25 рублей за литр</h3>
             <p>Физически испарение <span class="block">происходит до -40 градусов, что</span> позволяет использовать его в <span class="block">наших с вами погодных</span> условиях</p>
-            <a class="btn" href="">Заказать</a>
+            <button id="modal1" class="btn" >Заказать</button>
           </div>
           <div class="box">
             <h4>Идеальное соотношение</h4>
@@ -102,7 +104,7 @@
             <h2>Бутан</h2>
             <h3>от 16 рублей за литр</h3>
             <p>Испарение Бутана происходит <span class="block">только до 0 градусов и годится</span> <span class="block">для использования в тёплое</span> время года</p>
-            <a class="btn" href="">Заказать</a>
+            <button id="modal2" class="btn">Заказать</button>
           </div>
           <img src="/assets/icons/Group 10 (3).svg" alt="" class="price__wrapper__arrow">
         </div>
@@ -166,8 +168,10 @@
             <div class="content__text">
               <h2>Благодаря нашему <span class="block">собственному автопарку мы</span> можем
                 давать гарантию, что <span class="block">доставим <span>за 4 часа</span></span></h2>
+                <div class="link2">
                 <a class="btn" href="">Это сильное конкурентное преимущество, которым мы дорожим</a>
-            </div>
+                </div>
+              </div>
           </div>
         </div>
       </section> 
@@ -201,13 +205,35 @@
               </div>
               
             </div>
-            <div class="volume__btm"><button class="volume__btm__btn">Заказать газ</button></div>
+            <div  class="volume__btm"><button id="modal3" class="volume__btm__btn">Заказать газ</button></div>
           </div>
         </div>
       </section>
+
+
+
       <section class="modal">
-        
+        <div class="modal__wrapper">
+          <div class="modal__top">
+            <h2 class="modal__top__title">
+              Доставим газ
+              за 4 часа
+            </h2>
+            <div class="close-btn"><img src="/assets/icons/krestik.svg" alt=""></div>
+            
+          </div>
+          <form class="modal__form">
+            <input class="modal__form__inp" type="text" placeholder="Name">
+            <input class="modal__form__inp" type="tel" placeholder="Phone number">
+          </form>
+          <div class="modal__order">
+            <button id="modal4" class="modal__order__btn">Заказать доставку газа</button>
+          </div>
+        </div>
       </section>
+
+
+
       <section class="review">
         <div class="container">
           <div class="review__wrapper">

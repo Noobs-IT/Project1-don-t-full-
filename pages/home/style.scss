@@ -4,7 +4,12 @@
 @import "../home/advantage";
 @import "../home/volume";
 @import "../home/review";
+@import "../home/modal";
 
 body{
   font-family: 'Russo One';
 };
+.open-modal{
+  visibility: visible;
+  z-index: 10;
+}

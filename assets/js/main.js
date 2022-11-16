@@ -33,6 +33,37 @@ let swiper1 = new Swiper(".mySwiper", {
   mousewheel: true,
   keyboard: true,
 });
+let closeBtn = document.querySelector(".close-btn");
+let btn_mod = document.querySelector('#modal');
+let btn_mod1 = document.querySelector('#modal1');
+let btn_mod2 = document.querySelector('#modal2');
+let btn_mod3 = document.querySelector('#modal3');
+let btn_mod4 = document.querySelector('#modal4');
+let $modal = document.querySelector('.modal');
+
+btn_mod.addEventListener('click', (e)=>{
+  e.preventDefault()
+  $modal.classList.add('open-modal');
+})
+btn_mod1.addEventListener('click', (e)=>{
+  e.preventDefault()
+  $modal.classList.add('open-modal');
+})
+btn_mod2.addEventListener('click', (e)=>{
+  e.preventDefault()
+  $modal.classList.add('open-modal');
+})
+btn_mod3.addEventListener('click', (e)=>{
+  e.preventDefault()
+  $modal.classList.add('open-modal');
+})
+btn_mod4.addEventListener('click', (e)=>{
+  e.preventDefault()
+  $modal.classList.add('open-modal');
+})
+closeBtn.addEventListener('click', (f)=>{
+  $modal.classList.remove('open-modal')
+})
 // var swiper3 = new Swiper(".mySwiper", {
 //     navigation:{
 //         nextEl: ".swiper-button-next",
